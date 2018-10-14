@@ -12,6 +12,9 @@ You need to install dependencies via pip.
 pip install -r requirements.txt
 ```
 
+You currently need master branch of Chainer due to [the bug on Caffe import](https://github.com/chainer/chainer/issues/5462).
+This will possibly be merged in 5.0.0 in which case you can simply install Chainer via pypi.
+
 ## Dataset
 
 Download ImageNet validation dataset from [the official website](http://www.image-net.org/challenges/LSVRC/2012/nonpub-downloads).
