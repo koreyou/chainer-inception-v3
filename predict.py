@@ -91,7 +91,7 @@ for i in tqdm(list(range(1, 50000, BATCHSIZE))):
         results.append(chainer.cuda.to_cpu(y.data))
 
 results = np.concatenate(results, axis=0)
-# get top 5 indices
-top5 = np.argsort(results)[:, -5:][:, ::-1]
+# get top 5 indices, and change it to start from 1
+top5 = np.argsort(results)[:, -5:][:, ::-1] + 1
 # save as ImageNet prediction format
 np.savetxt(sys.argv[3], top5, delimiter=" ", fmt='%d')
