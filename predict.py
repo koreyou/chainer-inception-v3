@@ -71,9 +71,9 @@ if chainer.backends.intel64.is_ideep_available():
 BATCHSIZE = 32
 
 results = []
-for i in tqdm(list(range(1, 50000, BATCHSIZE))):
+for i in tqdm(list(range(1, 50001, BATCHSIZE))):
     imgs = []
-    for j in range(i, min(i + BATCHSIZE, 50000)):
+    for j in range(i, min(i + BATCHSIZE, 50001)):
         img_path = os.path.join(
             sys.argv[2], "ILSVRC2012_val_%08d.JPEG" % j)
         img = Image.open(img_path)
