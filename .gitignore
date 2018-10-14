@@ -35,3 +35,4 @@ ILSVRC2012_devkit_t12/
 inception-v3/
 **/result
 .python-version
+prediction.txt
