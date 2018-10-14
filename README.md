@@ -81,4 +81,14 @@ python eval.py \
 
 # Result (performance confirmation)
 
-To be coming.
+The error rate for ImageNet 2012 validation data was the following.
+
+```
+Top-1 error rate: 22.840000%
+Top-5 error rate: 6.364000%
+```
+
+This corresponds to top-1 (top-5) error of 21.67% (5.75%) report by [Caffe version](https://github.com/soeaver/caffe-model/tree/master/cls) of the same pretrained model, and 23.12% (6.656%) reported by [MXNET version](https://github.com/dmlc/mxnet-model-gallery/blob/master/imagenet-1k-inception-v3.md)
+The difference is due to the preprocessing.
+
+The prediction took 2 hours and 55 minutes (210 ms per an image) with Intel CPU+iDeep on a laptop.
