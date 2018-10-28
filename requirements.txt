@@ -1,4 +1,4 @@
 numpy
 Pillow
 tqdm
-git+https://github.com/chainer/chainer.git@cc975457cb3df181ca704bbf5e7e91e0f4258721
+chainer==5.0.0
